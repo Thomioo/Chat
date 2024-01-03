@@ -1,0 +1,93 @@
+* {
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    user-select: none;
+}
+
+label {
+    margin-left: auto;
+}
+
+#username {
+    margin: auto;
+    margin-left: 5px;
+    height: 30px;
+    width: auto;
+    background-color: dimgrey;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#username:focus {
+    outline: none;
+}
+
+div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+#chat {
+    margin: auto;
+    margin-top: 50px;
+    height: 550px;
+    width: 1600px;
+    background-color: dimgrey;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 30px;
+    overflow: scroll;
+    word-wrap: break-word;
+    -ms-overflow-style: none;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+#chat::-webkit-scrollbar {
+    display: none;
+}
+
+#chatbox {
+    margin: auto;
+    margin-right: 0px;
+    height: 50px;
+    width: 1500px;
+    background-color: dimgrey;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    /* margin-left: 125px; */
+}
+
+#chatbox:focus {
+    outline: none;
+}
+
+#send {
+    margin: auto;
+    margin-left: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    font-size: 20px;
+}
+
+#send:active {
+    outline: none;
+}
