@@ -96,7 +96,7 @@ function Scroll() {
 }
 
 async function Load() {
-    let res = await fetch(url + "/history?key=86923", {
+    let res = await fetch(url + "history?key=86923", {
         method: "get",
         headers: new Headers({
             "ngrok-skip-browser-warning": "69420",
@@ -120,7 +120,7 @@ async function Load() {
 }
 // refresh
 setInterval(async function () {
-    let res = await fetch(url + "/history?key=86923", {
+    let res = await fetch(url + "history?key=86923", {
         method: "get",
         headers: new Headers({
             "ngrok-skip-browser-warning": "69420",
