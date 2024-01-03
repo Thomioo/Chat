@@ -1,7 +1,7 @@
 import uvicorn, json, datetime
 
 from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
@@ -25,6 +25,18 @@ except:
     data = {}
 
 @app.get("/")
+def f():
+    return FileResponse("/Client/index.html", 200)
+
+@app.get("/style.css")
+def f():
+    return FileResponse("/Client/style.css", 200)
+
+@app.get("/script.js")
+def f():
+    return FileResponse("/Client/script.js", 200)
+
+@app.get("/history")
 def f(key: int):
     if key == 86923:
         return JSONResponse(dict(list(data.items())[:100]), 200)
@@ -37,7 +49,6 @@ def f(key: int):
     else:
         reloaded = False
     return 404
-
 
 @app.get("/message")
 def f(user: str, message: str, time: str):
